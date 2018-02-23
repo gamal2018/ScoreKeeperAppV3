@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/scroll_style">
+
+    <LinearLayout style="@style/home_linear">
+
+        <LinearLayout style="@style/horizontal_linear">
+
+            <LinearLayout style="@style/vertical_linear">
+
+                <TextView
+                    style="@style/headerText"
+                    android:text="@string/team_a" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/_0_text"
+                    android:text="@string/_0" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="TouchDownA"
+                    android:text="@string/TOUCHDOWNS" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="FIELD_GOALS_A"
+                    android:text="@string/FIELD_GOALS" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="TWO_POINT_A"
+                    android:text="@string/TWO_POINT" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="EXTRA_POINT_A"
+                    android:text="@string/EXTRA_POINT" />
+            </LinearLayout>
+
+            <View style="@style/view" />
+
+            <LinearLayout style="@style/vertical_linear">
+
+                <TextView
+                    style="@style/headerText"
+                    android:text="@string/team_b" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/_0_text"
+                    android:text="@string/_0" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="TouchDownB"
+                    android:text="@string/TOUCHDOWNS" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="FIELD_GOALS_B"
+                    android:text="@string/FIELD_GOALS" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="TWO_POINT_B"
+                    android:text="@string/TWO_POINT" />
+
+                <Button
+                    style="@style/button_style"
+                    android:onClick="EXTRA_POINT_B"
+                    android:text="@string/EXTRA_POINT" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout style="@style/relative">
+
+            <Button
+                style="@style/reset_button"
+                android:onClick="resetScore"
+                android:text="@string/reset" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
